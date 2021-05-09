@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Background clip</title>
+
+    <style>
+      div {
+        padding:30px;
+        border:10px dotted #000000;
+        background-color:red;  
+        margin: 10px;
+        color: #iii;
+      }
+
+      .borderBox {
+        background-clip:border-box;
+      }
+
+      .paddingBox {
+        background-clip:padding-box;
+      }
+
+      .contentBox {
+        background-clip:content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="borderBox">
+      Background is under the border
+    </div>
+    <div class="paddingBox">
+      Background is not under the border
+    </div>
+    <div class="contentBox">
+      Background is in the same area as the content
+    </div>
+  </body>
+</html>
